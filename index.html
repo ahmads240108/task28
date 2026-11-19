@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts -->
+
+  <!-- wow css -->
+  <link rel="stylesheet" href="/css/wow.min.css" />
+  <!-- animate css -->
+  <link rel="stylesheet" href="/css/animate.min.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="/css/all.min.css" />
+  <!-- bootstrap 5 css -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <!-- mdbootstrap css -->
+  <link rel="stylesheet" href="/css/mdb.min.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Document</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container content">
+    <h3 id="demo"></h3>
+    <button class="btn btn-danger" onclick="clearInterval(timer)">Stop</button>
+    <button class="btn btn-success" onclick="timer = setInterval(myTimer, 1000)">Continue</button>
+
+    <hr class="my-4" />
+
+    <h4>Alert after 3 seconds</h4>
+    <button class="btn btn-primary" onclick="delay = setTimeout(getData, 3000)">Click</button>
+    <button class="btn btn-secondary" onclick="clearTimeout(delay)">Stop</button>
+  </div>
+
+  <!-- wow js -->
+  <script src="/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- font awesome js -->
+  <script src="/js/all.min.js"></script>
+  <!-- bootstrap 5 js -->
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <!-- mdbootstrap js -->
+  <script src="/js/mdb.min.js"></script>
+  <!-- main js -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

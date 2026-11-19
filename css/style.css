@@ -1,0 +1,15 @@
+body {
+  height: 3000px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.content {
+  margin-top: 90px;
+}
